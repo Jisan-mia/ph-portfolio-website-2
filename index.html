@@ -3,12 +3,37 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1 ">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1 ">-->
     <title>Jisan : Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
 <body>
+
+    <div id="nav">
+        <nav>
+            <label for="" class="logo">JISAN</label>
+
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <label for="" id="icon">
+                <i class="fas fa-bars"></i>
+            </label>
+        </nav>
+    </div>
+
+
+
+
+
+
+
+
     <section id="first-section">
         <div class="half-width">
             <h1>Welcom To</h1>
@@ -55,4 +80,17 @@
         <p>&copy; Jisan Mia 2020, All Rights Reserved</p>
     </footer>
 
-</body></html>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#icon').click(function() {
+                $('ul').toggleClass('show')
+            })
+        })
+
+    </script>
+
+</body>
+
+</html>
